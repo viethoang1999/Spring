@@ -1,0 +1,11 @@
+create schema if not exists `quanlysach` default character set =  utf8mb4;
+use `quanlysach`;
+
+create table if not exists `quanlysach`.`User`(
+`Id` int not null,
+`Account` varchar(20) not null,
+`Password` varchar(20) not null,
+`Phone` varchar(10) not null,
+`Email` varchar(30) not null,
+primary key (`Id`)
+)
